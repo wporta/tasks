@@ -8,11 +8,7 @@ function TasksList({ tasks }: Props) {
   return (
     <>
       <div>TasksList</div>
-      <ul
-        style={{
-          listStyle: 'none',
-          textAlign: 'left',
-        }}>
+      <ul>
         {tasks.map((task: Task, idx: number) => (
           <li key={idx}>{task.name}</li>
         ))}
