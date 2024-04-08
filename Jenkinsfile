@@ -4,6 +4,9 @@ pipeline {
     }
 
     stages {
+        stage('Clean Workspac') {
+            cleanWs()
+        }
         stage('Building') {
             steps {
                 echo "Cloning the repo"
