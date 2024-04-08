@@ -5,7 +5,9 @@ pipeline {
 
     stages {
         stage('Clean Workspac') {
-            cleanWs()
+            steps {
+                cleanWs()
+            }
         }
         stage('Building') {
             steps {
