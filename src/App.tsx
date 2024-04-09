@@ -14,19 +14,19 @@ function App() {
   return (
     <>
       <main className="w-[80%] mx-auto">
+        <div className="flex justify-center w-full">
+          <h1 className="text-3xl font-bold m-5">Task Manager</h1>
+        </div>
         <div>
           <NewTask addTaskHandler={addTaskHandler} />
         </div>
-        <div className="mt-6 justify-center border flex flex-column">
-          {tasks.length > 0 ? <TasksList tasks={tasks} /> : <p>No tasks in list</p>}
+        <div className="text-2xl border-2 border-slate-200">
+          <div className="flex justify-center text-2xl">Tasks List</div>
+          <div className="flex m-4 px-5">
+            {tasks.length > 0 ? <TasksList tasks={tasks} /> : <p>No tasks in list</p>}
+          </div>
         </div>
       </main>
-
-      <div className="gid grid-cols-3">
-        <div className="col-start-2 border-red-900 border-2">
-          <h1 className="text-3xl font-bold">Task Manager</h1>
-        </div>
-      </div>
     </>
   );
 }
