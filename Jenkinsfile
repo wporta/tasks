@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        any {}
+        jenkins-slave-1 {}
     }
 
     stages {
