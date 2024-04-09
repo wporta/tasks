@@ -30,6 +30,7 @@ pipeline {
             steps {
                 echo "Cloning the repo"
                 sh '''
+                cd tasks
                 npm run build
                 '''
             }
