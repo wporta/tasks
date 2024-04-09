@@ -21,6 +21,7 @@ pipeline {
             steps {
                 echo "Installing Dependencies"
                 sh '''
+                cd tasks
                 npm install
                 '''
             }
