@@ -22,7 +22,7 @@ pipeline {
                 echo "Installing Dependencies"
                 sh '''
                 cd tasks
-                npm install
+                pnpm install
                 '''
             }
         }
@@ -31,7 +31,7 @@ pipeline {
                 echo "Cloning the repo"
                 sh '''
                 cd tasks
-                npm run build
+                pnpm run build
                 '''
             }
         }
